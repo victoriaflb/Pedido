@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #151320;
+}
+
+.caixa {
+    position: relative;
+    width: 500px;
+    height: 150px;
+    color: #fff;
+    background: #151320;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    font: bold 2em 'Century Gothic';
+    text-transform: uppercase;
+}
+
+.caixa::before,
+.caixa::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000,
+            #ffff00, #00ff00, #0099ff, #001aff, #a200ff);
+    z-index: -1;
+    background-size: 400%;
+    border-radius: 8px;
+    animation: AnimarBorda 8s linear alternate infinite;
+}
+
+.caixa::after {
+    filter: blur(50px);
+}
+
+@keyframes AnimarBorda {
+    0% {
+        background-position: 0;
+
+    }
+
+    100% {
+        background-position: 300%;
+
+    }
+}
+
+p {
+    color: aliceblue;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+   align-items: center;
+   text-align: center;
+    text-decoration: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    width: 10rem;
+    border-radius: 10px;
+    color: #fff;
+    background-color: brown;
+    font: bold 1em 'Century Gothic';
+
+    
+}
+
+.buttonGroup{
+    justify-content: space-between;
+    
+    display: flex;
+    flex-wrap: wrap;
+   
+    margin-top: 5rem;
+}
+
+
+button:hover {
+    background-color: #ff0000;
+}
+
+.app {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
