@@ -1,4 +1,4 @@
-# Pedido
+# Pedido 💍
 
 ![image](https://github.com/victoriaflb/Pedido/assets/122183830/9adb6b19-0318-4705-93d3-0accf2711822)
 
